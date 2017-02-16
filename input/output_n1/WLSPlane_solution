@@ -1,0 +1,13 @@
+Plane general Parameter(constant, not changed after initialization): 
+A    B   C   D
+-3.02165    5.12    -1    -4.69286
+X_AxisIntercept    Y_AxisIntercept   Z_AxisIntercept
+-1.55308    0.916574    -4.69286
+DistanceToOrigin: 
+-0.778424
+Hessian Normal Form: 
+P: -0.778424
+unitNormalVector: 
+-0.501214
+ 0.849276
+-0.165874
