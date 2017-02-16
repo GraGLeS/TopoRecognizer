@@ -106,7 +106,7 @@ void PointCloudGenerator::output_FunctionPointsIntoTxtFile(){
     
     double x, y, z;
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\PointCloudGenerator_FunctionPoints";
+    string directory = "PointCloudGenerator_FunctionPoints";
     outFile.open (directory.c_str());
     outFile << "N_Fct: " << N_Fct << endl;
     outFile << "function: y=a*x^2+b; z=c*x+d" << endl;

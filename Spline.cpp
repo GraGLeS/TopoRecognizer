@@ -58,7 +58,7 @@ void Spline::input_Pointset(vector<Point3D>* Pointset){
 void Spline::output_PointMatrix_TxtFile(Eigen::MatrixXd* EigenMatrixXd, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\Spline\\" + outFilename;
+    string directory = outFilename;
     outFile.open (directory.c_str());
     outFile << "X" << "    " << "Y" << "   "  << "Z" << "   " << "ID" << endl;  //Header
     
@@ -78,7 +78,7 @@ void Spline::output_PointMatrix_TxtFile(Eigen::MatrixXd* EigenMatrixXd, string o
 void Spline::output_BSpline_3D_Degree_1_Knots_Ctrls_TxtFile(KnotVectorType3D_deg1& KnotParameters, ControlPointVectorType3D_deg1& ControlPoints, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\Spline\\BSpline_3D_Degree_1_Knots_Ctrls" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << "KnotParameters: " << endl;
     outFile << KnotParameters << endl << endl << endl << endl;
@@ -90,7 +90,7 @@ void Spline::output_BSpline_3D_Degree_1_Knots_Ctrls_TxtFile(KnotVectorType3D_deg
 void Spline::output_BSpline_3D_Degree_2_Knots_Ctrls_TxtFile(KnotVectorType3D_deg2& KnotParameters, ControlPointVectorType3D_deg2& ControlPoints, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\Spline\\BSpline_3D_Degree_2_Knots_Ctrls" + outFilename;
+    string directory =   outFilename;
     outFile.open (directory.c_str());
     outFile << "KnotParameters: " << endl;
     outFile << KnotParameters << endl << endl << endl << endl;
@@ -102,7 +102,7 @@ void Spline::output_BSpline_3D_Degree_2_Knots_Ctrls_TxtFile(KnotVectorType3D_deg
 void Spline::output_BSpline_3D_Degree_3_Knots_Ctrls_TxtFile(KnotVectorType3D_deg3& KnotParameters, ControlPointVectorType3D_deg3& ControlPoints, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\Spline\\BSpline_3D_Degree_3_Knots_Ctrls" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << "KnotParameters: " << endl;
     outFile << KnotParameters << endl << endl << endl << endl;

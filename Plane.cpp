@@ -46,7 +46,7 @@ void Plane::output_ParameterIntoTxtFile(string outFilename){
     calc_AxisIntercepts();
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << "Plane general Parameter(constant, not changed after initialization): " << endl; //Header
     outFile << "A" << "    " << "B" << "   "  << "C" << "   " << "D" << endl; 

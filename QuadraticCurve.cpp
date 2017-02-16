@@ -34,7 +34,7 @@ void QuadraticCurve::input_WLSsolution(Eigen::Vector3d* WLS_Solution){
 void QuadraticCurve::output_ParameterIntoTxtFile(string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << "QuadraticCurve Parameter: " << endl; //Header
     outFile << "A" << "    " << "B" << "   "  << "C" << "   "  << "D" << endl; 
@@ -49,7 +49,7 @@ double QuadraticCurve::get_y(double x){
 void QuadraticCurve::output_FctValues_TextFile(double min_x, double max_x, double delta_x, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << "X" << "    " << "Y";  //Header
     

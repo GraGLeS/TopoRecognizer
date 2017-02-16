@@ -6,7 +6,7 @@ set(CMAKE_BUILD_DIR "build")
 
 set(MY_SOURCES main.cpp TriplelinePointsetClass.cpp LocalPointset.cpp LinearCurve.cpp Plane.cpp Point3D.cpp PointCloudGenerator.cpp QuadraticCurve.cpp Spline.cpp)
 
-set(CMAKE_CXX_FLAGS "-g -O0 -Wall")
+set(CMAKE_CXX_FLAGS "-g -O3 -Wall")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}") 
 ADD_DEFINITIONS("-std=c++0x")
 

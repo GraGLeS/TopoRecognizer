@@ -60,7 +60,7 @@ void LinearCurve::calc_PointSlopeForm3D(){
 void LinearCurve::output_ParameterIntoTxtFile(string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory = outFilename;
     outFile.open (directory.c_str());
     outFile << "LinearCurve Parameter: " << endl; //Header
     outFile << "A" << "    " << "B" << "   "  << "C" << endl; 
@@ -88,7 +88,7 @@ double LinearCurve::get_y(double x){
 void LinearCurve::output_FctValues_PointSlopeForm3D_TextFile(double min_t, double max_t, double delta_t, string outFilename){
    
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory = outFilename;
     outFile.open (directory.c_str());
     outFile << "X" << "    " << "Y" << "   "  << "Z";  //Header
     
@@ -106,7 +106,7 @@ void LinearCurve::output_FctValues_PointSlopeForm3D_TextFile(double min_t, doubl
 void LinearCurve::output_FctValues_SlopeInterceptForm2D_TextFile(double min_x, double max_x, double delta_x, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory = outFilename;
     outFile.open (directory.c_str());
     outFile << "X" << "    " << "Y";  //Header
     

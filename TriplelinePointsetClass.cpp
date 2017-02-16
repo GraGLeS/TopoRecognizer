@@ -285,7 +285,7 @@ void TriplelinePointsetClass::input_TPS_OutOfTxtFile(string inFilename){
 void TriplelinePointsetClass::output_DataDebugging_txt(string outFilename){
     
     pOutFile = new ofstream;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\" + outFilename;
+    string directory = outFilename;
     pOutFile->open (directory.c_str());
 }
 
@@ -293,7 +293,7 @@ void TriplelinePointsetClass::output_TPS_IntoTxtFile(vector<Point3D>* Pointset, 
     
     double x, y, z;
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\" + outFilename;
+    string directory = outFilename;
     outFile.open (directory.c_str());
     outFile << "X" << "    " << "Y" << "   "  << "Z" << "   " << "GLobalID" << "    " << "OrderedID" << "   " << "epsilon" << endl;  //Header
       
@@ -310,7 +310,7 @@ void TriplelinePointsetClass::output_TPS_IntoTxtFile(vector<Point3D>* Pointset, 
 void TriplelinePointsetClass::output_EigenMatrixXd(Eigen::MatrixXd* EigenMatrix, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\" + outFilename;
+    string directory = outFilename;
     outFile.open (directory.c_str());
     outFile << (*EigenMatrix);
     outFile.close();  
@@ -415,7 +415,7 @@ void TriplelinePointsetClass::calc_Sufficient_LP_forMLS(int GlobalID_LoopPoint){
     string seperator = "_";
     string outFilename = n_MLSIterationStep.str() + seperator + "n" +  seperator + GlobalID_LP.str() + seperator + "ID" + seperator + "calc_SufficientLocalPointset";
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
   
     (*LP_Object).clear();

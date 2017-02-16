@@ -174,7 +174,7 @@ string LocalPointset::get_NameDataOutput(string addName){
 
 void LocalPointset::output_DataDebugging_txt(string outFilename){
    
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory = outFilename;
     pOutFile_LP->open (directory.c_str());
     
 }
@@ -292,7 +292,7 @@ double LocalPointset::calc_rho(){
 void LocalPointset::output_LP_TxtFile(string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory = outFilename;
     outFile.open (directory.c_str());
     outFile << "X" << "    " << "Y" << "   "  << "Z" << "   " << "GLobalID" << "   " << "LocalID" << "   " << "Distances" << "   " << "CubicWeight" << endl;  //Header
     
@@ -310,7 +310,7 @@ void LocalPointset::output_LP_TxtFile(string outFilename){
 void LocalPointset::output_EigenMatrixXd(Eigen::MatrixXd* EigenMatrix, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << (*EigenMatrix);
     outFile.close();  
@@ -320,7 +320,7 @@ void LocalPointset::output_EigenMatrixXd(Eigen::MatrixXd* EigenMatrix, string ou
 void LocalPointset::output_EigenMatrix3d(Eigen::Matrix3d* EigenMatrix, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << (*EigenMatrix);
     outFile.close();  
@@ -330,7 +330,7 @@ void LocalPointset::output_EigenMatrix3d(Eigen::Matrix3d* EigenMatrix, string ou
 void LocalPointset::output_EigenVector3d(Eigen::Vector3d* EigenVector, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << (*EigenVector);
     outFile.close();  
@@ -340,7 +340,7 @@ void LocalPointset::output_EigenVector3d(Eigen::Vector3d* EigenVector, string ou
 void LocalPointset::output_EigenMatrix2d(Eigen::Matrix2d* EigenMatrix, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory =  outFilename;
     outFile.open (directory.c_str());
     outFile << (*EigenMatrix);
     outFile.close();  
@@ -350,7 +350,7 @@ void LocalPointset::output_EigenMatrix2d(Eigen::Matrix2d* EigenMatrix, string ou
 void LocalPointset::output_EigenVector2d(Eigen::Vector2d* EigenVector, string outFilename){
     
     ofstream outFile;
-    string directory = "D:\\masterarbeit\\NetBeansProjects\\Masterarbeit_FW\\output\\LP\\" + outFilename;
+    string directory = outFilename;
     outFile.open (directory.c_str());
     outFile << (*EigenVector);
     outFile.close();  
